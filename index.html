@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Velasco — Designer & Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <canvas class="noise-canvas" id="noiseCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">MV</div>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav__link" data-text="Sobre mí">Sobre mí</a></li>
+      <li><a href="#work" class="nav__link" data-text="Proyectos">Proyectos</a></li>
+      <li><a href="#skills" class="nav__link" data-text="Skills">Skills</a></li>
+      <li><a href="#contact" class="nav__link" data-text="Contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__status">
+      <span class="status-dot"></span>
+      Disponible
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text">PORTAFOLIO</div>
+
+    <div class="hero__scene" id="heroScene">
+      <div class="cube-wrapper" id="cubeWrapper">
+        <div class="cube">
+          <div class="cube__face cube__face--front">3D</div>
+          <div class="cube__face cube__face--back">DEV</div>
+          <div class="cube__face cube__face--left">UX</div>
+          <div class="cube__face cube__face--right">UI</div>
+          <div class="cube__face cube__face--top">WEB</div>
+          <div class="cube__face cube__face--bottom">CSS</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span>Diseñador</span>
+        <span class="separator">✦</span>
+        <span>Desarrollador</span>
+        <span class="separator">✦</span>
+        <span>3D Artist</span>
+      </div>
+      <h1 class="hero__title reveal">
+        <span class="hero__title-line">MANUEL</span>
+        <span class="hero__title-line italic">VELASCO</span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        Creo experiencias digitales que viven en la intersección del diseño,
+        el código y el espacio tridimensional.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn--ghost">Contáctame</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+
+    <div class="hero__counter">
+      <div class="counter-item">
+        <span class="counter-num" data-target="47">0</span>
+        <span class="counter-label">Proyectos</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="5">0</span>
+        <span class="counter-label">Años exp.</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="23">0</span>
+        <span class="counter-label">Clientes</span>
+      </div>
+    </div>
+  </section>
+
+<!-- MARQUEE -->
+  <div class="marquee-section">
+
+    <div class="marquee-track">
+
+      <div class="marquee-content">
+
+        <span>FIGMA</span><span class="dot">●</span>
+        <span>NEXT.JS</span><span class="dot">●</span>
+        <span>CSS 3D</span><span class="dot">●</span>
+        <span>NODE.JS</span><span class="dot">●</span>
+        <span>THREE.JS</span><span class="dot">●</span>
+        <span>REACT</span><span class="dot">●</span>
+        <span>BLENDER</span><span class="dot">●</span>
+        <span>MAYA</span><span class="dot">●</span>
+        <span>SUBSTANCE 3D</span><span class="dot">●</span>
+        <span>AFTER EFFECTS</span><span class="dot">●</span>
+        <span>PHOTOSHOP</span><span class="dot">●</span>
+        <span>ILLUSTRATOR</span><span class="dot">●</span>
+        <span>PREMIERE PRO</span><span class="dot">●</span>
+        <span>GSAP</span><span class="dot">●</span>
+        <span>WEBGL</span><span class="dot">●</span>
+
+        <span>FIGMA</span><span class="dot">●</span>
+        <span>NEXT.JS</span><span class="dot">●</span>
+        <span>CSS 3D</span><span class="dot">●</span>
+        <span>NODE.JS</span><span class="dot">●</span>
+        <span>THREE.JS</span><span class="dot">●</span>
+        <span>REACT</span><span class="dot">●</span>
+        <span>BLENDER</span><span class="dot">●</span>
+        <span>MAYA</span><span class="dot">●</span>
+        <span>SUBSTANCE 3D</span><span class="dot">●</span>
+        <span>AFTER EFFECTS</span><span class="dot">●</span>
+        <span>PHOTOSHOP</span><span class="dot">●</span>
+        <span>ILLUSTRATOR</span><span class="dot">●</span>
+        <span>PREMIERE PRO</span><span class="dot">●</span>
+        <span>GSAP</span><span class="dot">●</span>
+        <span>WEBGL</span><span class="dot">●</span>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__left">
+        <div class="section-label reveal">— / Sobre mí</div>
+        <h2 class="about__title reveal">
+          Donde el código<br/>
+          <em>respira</em> en<br/>
+          tres dimensiones
+        </h2>
+        <div class="about__card reveal">
+          <div class="card-3d" id="aboutCard">
+            <div class="card-3d__inner">
+              <div class="card-3d__avatar">
+                <div class="avatar-orb"></div>
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__right">
+        <p class="about__text reveal">
+          Soy un diseñador y desarrollador frontend con pasión por las experiencias 
+          3D interactivas. Me especializo en crear interfaces que van más allá de la 
+          pantalla plana — donde cada interacción tiene profundidad, peso y significado.
+        </p>
+        <p class="about__text reveal">
+          Mi proceso combina pensamiento sistémico de diseño UX con implementación 
+          técnica avanzada: desde shaders GLSL hasta animaciones CSS cinematográficas.
+        </p>
+
+        <div class="about__tags reveal">
+          <span class="tag">WebGL</span>
+          <span class="tag">Motion Design</span>
+          <span class="tag">3D Modeling</span>
+          <span class="tag">Creative Dev</span>
+          <span class="tag">Shader Art</span>
+          <span class="tag">Interaction Design</span>
+        </div>
+
+        <div class="about__links reveal">
+          <a href="#" class="text-link">Descargar CV <span>↗</span></a>
+          <a href="#" class="text-link">GitHub <span>↗</span></a>
+          <a href="#" class="text-link">Behance <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-header reveal">
+      <div class="section-label">— 002 / Proyectos</div>
+      <h2 class="section-title">Trabajos<br/><em>Seleccionados</em></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-card--large reveal" data-project="1">
+        <div class="project-card__visual">
+          <div class="project-visual project-visual--cosmos">
+            <div class="cosmos-sphere"></div>
+            <div class="cosmos-ring r1"></div>
+            <div class="cosmos-ring r2"></div>
+            <div class="cosmos-ring r3"></div>
+            <div class="cosmos-particles" id="particles1"></div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-num">01</span>
+          <h3 class="project-title">Cosmos UI System</h3>
+          <p class="project-desc">Sistema de diseño 3D con componentes WebGL interactivos y animaciones basadas en física.</p>
+          <div class="project-tags">
+            <span>Three.js</span><span>React</span><span>WebGL</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-project="2">
+        <div class="project-card__visual">
+          <div class="project-visual project-visual--prism">
+            <div class="prism-shape"></div>
+            <div class="prism-light"></div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-num">02</span>
+          <h3 class="project-title">Prism Studio</h3>
+          <p class="project-desc">Plataforma creativa para visualización de datos en 3D.</p>
+          <div class="project-tags">
+            <span>D3.js</span><span>GLSL</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-project="3">
+        <div class="project-card__visual">
+          <div class="project-visual project-visual--void">
+            <div class="void-grid"></div>
+            <div class="void-cursor"></div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-num">03</span>
+          <h3 class="project-title">Void Dashboard</h3>
+          <p class="project-desc">Dashboard de analytics con perspectiva isométrica y animaciones fluidas.</p>
+          <div class="project-tags">
+            <span>Next.js</span><span>GSAP</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card project-card--wide reveal" data-project="4">
+        <div class="project-card__visual">
+          <div class="project-visual project-visual--morph">
+            <div class="morph-blob b1"></div>
+            <div class="morph-blob b2"></div>
+            <div class="morph-blob b3"></div>
+            <div class="morph-text">MORPH</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-num">04</span>
+          <h3 class="project-title">Morph Identity</h3>
+          <p class="project-desc">Identidad visual dinámica generativa para estudio de arquitectura digital. Formas que responden al scroll y al tiempo.</p>
+          <div class="project-tags">
+            <span>Canvas API</span><span>SVG</span><span>Motion</span>
+          </div>
+          <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-header reveal">
+      <div class="section-label">— 003 / Skills</div>
+      <h2 class="section-title">Herramientas<br/><em>&amp; Tecnologías</em></h2>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-3d-scene reveal">
+        <div class="orbit-system" id="orbitSystem">
+          <div class="orbit-center">
+            <span>DEV</span>
+          </div>
+          <div class="orbit orbit--1">
+            <div class="orbit-item" style="--angle:0deg"><span>React</span></div>
+            <div class="orbit-item" style="--angle:90deg"><span>Vue</span></div>
+            <div class="orbit-item" style="--angle:180deg"><span>Node</span></div>
+            <div class="orbit-item" style="--angle:270deg"><span>TS</span></div>
+          </div>
+          <div class="orbit orbit--2">
+            <div class="orbit-item" style="--angle:45deg"><span>Three</span></div>
+            <div class="orbit-item" style="--angle:135deg"><span>GSAP</span></div>
+            <div class="orbit-item" style="--angle:225deg"><span>GLSL</span></div>
+            <div class="orbit-item" style="--angle:315deg"><span>WebGL</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-list reveal">
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Frontend &amp; 3D</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Three.js / WebGL" data-level="92"></div>
+            <div class="skill-bar" data-skill="React / Next.js" data-level="95"></div>
+            <div class="skill-bar" data-skill="GSAP / Motion" data-level="88"></div>
+            <div class="skill-bar" data-skill="CSS / Animaciones" data-level="97"></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Diseño &amp; Creative</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Blender 3D" data-level="80"></div>
+            <div class="skill-bar" data-skill="Figma / Design Sys." data-level="93"></div>
+            <div class="skill-bar" data-skill="Motion Design" data-level="85"></div>
+            <div class="skill-bar" data-skill="Shader / GLSL" data-level="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg-shape"></div>
+    <div class="contact__content">
+      <div class="section-label reveal">— / Contacto</div>
+      <h2 class="contact__title reveal">
+        ¿Tienes un proyecto<br/>
+        <em>en mente?</em>
+      </h2>
+      <p class="contact__sub reveal">
+        Estoy disponible para proyectos freelance, colaboraciones y posiciones full-time.
+      </p>
+
+      <div class="contact__cta reveal">
+          <a href="mailto:manuelvelasco.dev@gmail.com" class="contact__email">
+          manuelvelasco@gmail.com
+          <span class="email-arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="contact__socials reveal">
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">Dribbble</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>© 2025 Manuel Velasco</span>
+      <span>Diseñado por Manuel Velasco</span>
+      <span>Bogotá, Colombia</span>
+    </footer>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
